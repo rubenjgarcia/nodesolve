@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="NodeSolve.html">NodeSolve</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><p>nodesolve</p>
+<p><a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="js-standard-style"></a></p>
+<p>Use <a href="http://lpsolve.sourceforge.net">LP Solve</a> from NodeJs. This module uses LP Solve 5.5.2</p>
+<h1>Usage</h1><p><strong>First of all, all the functions are 0-index instead of 1-index like in lpsolve</strong></p>
+<p>Install the module using npm</p>
+<pre class="prettyprint source"><code>npm install nodesolve</code></pre><p>For more information see the JSDoc</p>
+<h1>Build from source</h1><ol>
+<li>Install node-gyp</li>
+</ol>
+<pre class="prettyprint source"><code>npm install node-gyp -g</code></pre><ol>
+<li>Build project files for your platform</li>
+</ol>
+<pre class="prettyprint source"><code>node-gyp configure</code></pre><ol>
+<li>Generate <code>lpsolve.node</code> file</li>
+</ol>
+<pre class="prettyprint source"><code>node-gyp build</code></pre><h1>Testing</h1><p>To test the module use the test task from gulp</p>
+<pre class="prettyprint source"><code>gulp test</code></pre><h1>Attention!!!</h1><p>This module is in alpha and the next methods aren't implemented yet</p>
+<ul>
+<li>add_column, add_columnex, str_add_column</li>
+<li>add_lag_con, str_add_lag_con</li>
+<li>add_SOS</li>
+<li>column_in_lp</li>
+<li>copy_lp</li>
+<li>default_basis</li>
+<li>del_column</li>
+<li>del_constraint</li>
+<li>dualize_lp</li>
+<li>free_lp</li>
+<li>get_anti_degen</li>
+<li>get_basis</li>
+<li>get_basiscrash</li>
+<li>get_bb_depthlimit</li>
+<li>get_bb_floorfirst</li>
+<li>get_bb_rule</li>
+<li>get_bounds_tighter</li>
+<li>get_break_at_value</li>
+<li>get_col_name, get_origcol_name</li>
+<li>get_column, get_columnex</li>
+<li>get_constr_type</li>
+<li>get_constr_value</li>
+<li>get_constraints, get_ptr_constraints</li>
+<li>get_epsb</li>
+<li>get_epsd</li>
+<li>get_epsel</li>
+<li>get_epsint</li>
+<li>get_epsperturb</li>
+<li>get_epspivot</li>
+<li>get_improve</li>
+<li>get_infinite</li>
+<li>get_lambda, get_ptr_lambda, get_lambda, get_ptr_lambda</li>
+<li>get_lp_index</li>
+<li>get_Lrows</li>
+<li>get_mat</li>
+<li>get_max_level, get_max_level</li>
+<li>get_maxpivot</li>
+<li>get_mip_gap</li>
+<li>get_nameindex</li>
+<li>get_negrange</li>
+<li>get_nonzeros</li>
+<li>get_Norig_columns</li>
+<li>get_Norig_rows</li>
+<li>get_obj_bound</li>
+<li>get_objective</li>
+<li>get_orig_index</li>
+<li>get_pivoting</li>
+<li>get_presolve</li>
+<li>get_presolveloops</li>
+<li>get_primal_solution, get_ptr_primal_solution, get_var_primalresult</li>
+<li>get_print_sol</li>
+<li>get_row, get_rowex</li>
+<li>get_row_name, get_origrow_name</li>
+<li>get_scalelimit</li>
+<li>get_scaling</li>
+<li>get_sensitivity_obj, get_ptr_sensitivity_obj, get_sensitivity_objex, get_ptr_sensitivity_objex</li>
+<li>get_sensitivity_rhs, get_ptr_sensitivity_rhs, get_dual_solution, get_ptr_dual_solution, get_var_dualresult</li>
+<li>get_simplextype</li>
+<li>get_solutioncount</li>
+<li>get_solutionlimit</li>
+<li>get_status</li>
+<li>get_statustext</li>
+<li>get_total_iter</li>
+<li>get_total_nodes</li>
+<li>get_var_branch</li>
+<li>get_var_priority, get_var_priority</li>
+<li>get_variables, get_ptr_variables</li>
+<li>get_working_objective</li>
+<li>guess_basis</li>
+<li>has_BFP</li>
+<li>has_XLI</li>
+<li>is_anti_degen</li>
+<li>is_constr_type</li>
+<li>is_debug</li>
+<li>is_feasible</li>
+<li>is_unbounded</li>
+<li>is_infinite</li>
+<li>is_integerscaling</li>
+<li>is_lag_trace</li>
+<li>is_nativeBFP</li>
+<li>is_nativeXLI</li>
+<li>is_negative</li>
+<li>is_obj_in_basis</li>
+<li>is_piv_mode</li>
+<li>is_piv_rule</li>
+<li>is_presolve</li>
+<li>is_scalemode</li>
+<li>is_scaletype</li>
+<li>is_semicont</li>
+<li>is_SOS_var</li>
+<li>is_trace</li>
+<li>is_use_names</li>
+<li>lag_solve</li>
+<li>print_constraints</li>
+<li>print_debugdump</li>
+<li>print_duals</li>
+<li>print_lp</li>
+<li>print_objective</li>
+<li>print_scales</li>
+<li>print_solution</li>
+<li>print_str</li>
+<li>print_tableau</li>
+<li>put_abortfunc</li>
+<li>put_bb_branchfunc</li>
+<li>put_bb_nodefunc</li>
+<li>put_logfunc</li>
+<li>put_msgfunc</li>
+<li>read_basis</li>
+<li>read_mps, read_freemps, read_MPS, read_freeMPS</li>
+<li>read_params</li>
+<li>read_XLI</li>
+<li>reset_basis</li>
+<li>reset_params</li>
+<li>set_anti_degen, get_anti_degen</li>
+<li>set_basis</li>
+<li>set_basiscrash</li>
+<li>set_basisvar</li>
+<li>set_bb_depthlimit</li>
+<li>set_bb_floorfirst</li>
+<li>set_bb_rule</li>
+<li>set_BFP</li>
+<li>set_XLI</li>
+<li>set_bounds_tighter</li>
+<li>set_break_at_value</li>
+<li>set_column, set_columnex</li>
+<li>set_col_name</li>
+<li>set_constr_type</li>
+<li>set_debug</li>
+<li>set_epsb</li>
+<li>set_epsd</li>
+<li>set_epsel</li>
+<li>set_epsint</li>
+<li>set_epsperturb</li>
+<li>set_epspivot</li>
+<li>set_epslevel</li>
+<li>set_unbounded</li>
+<li>set_improve</li>
+<li>set_infinite</li>
+<li>set_lag_trace</li>
+<li>set_mat</li>
+<li>set_maxpivot</li>
+<li>set_mip_gap</li>
+<li>set_negrange</li>
+<li>set_obj_bound</li>
+<li>set_obj_in_basis</li>
+<li>set_outputstream, set_outputfile</li>
+<li>set_pivoting</li>
+<li>set_preferdual</li>
+<li>set_presolve</li>
+<li>set_print_sol</li>
+<li>set_row, set_rowex</li>
+<li>set_row_name</li>
+<li>set_scalelimit</li>
+<li>set_scaling</li>
+<li>set_semicont</li>
+<li>set_sense</li>
+<li>set_simplextype</li>
+<li>set_solutionlimit</li>
+<li>set_trace</li>
+<li>set_use_names</li>
+<li>set_var_branch</li>
+<li>set_var_weights</li>
+<li>time_elapsed</li>
+<li>unscale</li>
+<li>write_basis</li>
+<li>write_mps, write_freemps, write_MPS, write_freeMPS, MPS_writefileex</li>
+<li>write_params</li>
+<li>write_XLI</li>
+</ul></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on 2016-02-19T21:16:17+01:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
+</body>
+</html>

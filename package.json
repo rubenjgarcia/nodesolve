@@ -1,0 +1,43 @@
+{
+  "name": "nodesolve",
+  "version": "0.1.0-alpha-1",
+  "description": "Use [LP Solve](http://lpsolve.sourceforge.net) from NodeJs. This module uses LP Solve 5.5.2",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "preinstall": "node-gyp configure && node-gyp rebuild"
+  },
+  "keywords": [
+    "lpsolve",
+    "lp_solve",
+    "lp",
+    "solve",
+    "linear",
+    "programming",
+    "math"
+  ],
+  "author": {
+    "name": "Ruben J Garcia",
+    "email": "rubenjgarciab@gmail.com",
+    "url": "https://github.com/rubenjgarcia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rubenjgarcia/nodesolve.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "lodash": "^4.5.0",
+    "nan": "^2.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-coverage": "^0.3.38",
+    "gulp-jsdoc3": "^0.2.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-mocha": "^2.2.0",
+    "run-sequence": "^1.1.5"
+  }
+}
